@@ -1,0 +1,119 @@
+import java.util.*;
+
+/** 
+ * Jogo para adivinhar um número. V4
+ * @author João Paulo Barros
+ * @version 2016/10/31
+ * 
+ * O programa deve ser escrito em inglês.
+ */
+public class MinMaxGame5
+{
+    final static Scanner scanner = new Scanner(System.in);
+    static { scanner.useLocale(Locale.ENGLISH); }
+
+    private static final int N_TRIES = 5;
+    private static final int N_PLAYS = 10;
+    
+    public static void main(String[] args)
+    {
+        int nWins = 0;
+        for(int i = 0; i < N_PLAYS; i++)
+        {
+            nWins = nWins + play(i + 1);
+        }
+        int winsPercentage = (int)((double)nWins / N_PLAYS + 0.5);
+        System.out.printf("Acertou\t %02d vezes (%02d%%)\n", nWins, winsPercentage); 
+        int nLooses = N_PLAYS - nWins; 
+        int loosesPercentage = 100 - winsPercentage;
+        System.out.printf("Errou\t %02d vezes (%02d%%)\n", nLooses, loosesPercentage);   
+    }
+    
+    
+    /**
+     * -- Non pure function (prints)
+     * Has side effects (prints, thus changing the output)
+     * @return 1 if win 0 if loose
+     */
+    private static int play(int n)
+    {
+        System.out.println("--- JOGADA " + n + " de " + N_PLAYS  + " ---");
+        System.out.println("Indique um número mínimo: ");
+        int min = scanner.nextInt();
+        System.out.println("Indique um número máximo: ");
+        int max = scanner.nextInt();
+
+        int rightValue = random(min, max);
+        
+        return guessNumber(rightValue);
+    }
+    
+    /**
+     * -- Non pure function (prints)
+     * Has side effects (prints, thus changing the output)
+     * Tries to guess number
+     * @param rightValue number to guess
+     * @return 1 if win 0 if loose
+     */
+    private static int guessNumber(int rightValue)
+    {
+        for(int i = 0; i < N_TRIES; i++)
+        {
+            boolean hasWinned = askQuestion(rightValue);
+            if (hasWinned) 
+            {       
+                return 1; // exit
+            }
+        }
+        System.out.println("\nFalhou todas as tentativas!");
+        return 0;
+    }
+   
+    /**
+     * -- Non pure function (prints)
+     * Asks for a number and tells if it is the right one
+     * @param the numebr to guess
+     * @return true if the user guessed, false otherwise
+     */    
+    private static boolean askQuestion(int rightValue)
+    {
+        System.out.println("Indique um número: ");
+        int n = scanner.nextInt();
+
+        boolean win = (n == rightValue);
+        System.out.println(output(win, rightValue));
+        
+        return win;
+    }
+
+    /**
+     * -- "Pure" function (only depends on the arguments and does no change or writes anything)
+     * Return message
+     * @param win wins or not
+     * @param rightValue rigth value between min and max 
+     * @return output message 
+     */
+    private static String output(boolean win, int rightValue)
+    {
+        if (win)
+        {
+            return "Acertou!";
+        }
+        else
+        {
+            return "Errou! Tente novamente.";
+        }
+    }
+
+    /**
+     * -- "Pure" function (only depends on the arguments and does no change or writes anything)
+     * @param mim min value
+     * @param max max value
+     * @return random value between min and max 
+     */
+    private static int random(int min, int max)
+    {
+        double rand = Math.random();
+        return (int)(min + (max - min + 1) * rand);
+    }
+}

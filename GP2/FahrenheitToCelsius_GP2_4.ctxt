@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=FahrenheitToCelsius_GP2_4
+comment0.text=\ Este\ template\ foi\ criado\ na\ \n\ Escola\ Superior\ de\ Tecnologia\ e\ Gest\u00E3o\ do\n\ Instituto\ Polit\u00C8cnico\ de\ Beja\n\ em\ 2016/09/29\n\ -----------------------------------------------------\n\ Adicione\ aqui\ uma\ descri\u00E7\u00E3o\ da\ classe,\ o\ seu\ nome\ e\ a\ data\n\ @author\ (o\ seu\ nome)\ \n\ @version\ (n\u00FAmero\ de\ vers\u00E3o\ ou\ data)\n\ \n\ O\ programa\ deve\ ser\ escrito\ em\ ingl\u00EAs.\n
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+comment2.params=fahrenheit
+comment2.target=double\ fahrenheit2Celsius(double)
+comment2.text=\n\ Converts\ Fahrenheit\ degrees\ to\ Celsius\ degrees\n\n\ @param\ \ fahrenheit\ \ \ fahrenheit\ degrees\n\ @return\ celsius\ degrees\n
+numComments=3

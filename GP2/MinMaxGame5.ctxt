@@ -1,0 +1,21 @@
+#BlueJ class context
+comment0.target=MinMaxGame5
+comment0.text=\ \n\ Jogo\ para\ adivinhar\ um\ n\u00FAmero.\ V4\n\ @author\ Jo\u00E3o\ Paulo\ Barros\n\ @version\ 2016/10/31\n\ \n\ O\ programa\ deve\ ser\ escrito\ em\ ingl\u00EAs.\n
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+comment2.params=n
+comment2.target=int\ play(int)
+comment2.text=\n\ --\ Non\ pure\ function\ (prints)\n\ Has\ side\ effects\ (prints,\ thus\ changing\ the\ output)\n\ @return\ 1\ if\ win\ 0\ if\ loose\n
+comment3.params=rightValue
+comment3.target=int\ guessNumber(int)
+comment3.text=\n\ --\ Non\ pure\ function\ (prints)\n\ Has\ side\ effects\ (prints,\ thus\ changing\ the\ output)\n\ Tries\ to\ guess\ number\n\ @param\ rightValue\ number\ to\ guess\n\ @return\ 1\ if\ win\ 0\ if\ loose\n
+comment4.params=rightValue
+comment4.target=boolean\ askQuestion(int)
+comment4.text=\n\ --\ Non\ pure\ function\ (prints)\n\ Asks\ for\ a\ number\ and\ tells\ if\ it\ is\ the\ right\ one\n\ @param\ the\ numebr\ to\ guess\n\ @return\ true\ if\ the\ user\ guessed,\ false\ otherwise\n
+comment5.params=win\ rightValue
+comment5.target=java.lang.String\ output(boolean,\ int)
+comment5.text=\n\ --\ "Pure"\ function\ (only\ depends\ on\ the\ arguments\ and\ does\ no\ change\ or\ writes\ anything)\n\ Return\ message\n\ @param\ win\ wins\ or\ not\n\ @param\ rightValue\ rigth\ value\ between\ min\ and\ max\ \n\ @return\ output\ message\ \n
+comment6.params=min\ max
+comment6.target=int\ random(int,\ int)
+comment6.text=\n\ --\ "Pure"\ function\ (only\ depends\ on\ the\ arguments\ and\ does\ no\ change\ or\ writes\ anything)\n\ @param\ mim\ min\ value\n\ @param\ max\ max\ value\n\ @return\ random\ value\ between\ min\ and\ max\ \n
+numComments=7

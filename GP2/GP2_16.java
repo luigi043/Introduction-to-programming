@@ -1,0 +1,39 @@
+
+import java.util.*;
+
+/** Este template foi criado na 
+ * Escola Superior de Tecnologia e Gestão do
+ * Instituto PolitÈcnico de Beja
+ * em 2016/09/29
+ * -----------------------------------------------------
+ * Adicione aqui uma descrição da classe, o seu nome e a data
+ * @author Joao Paulo Barros
+ * @version 2016/10/30
+ * 
+ * O programa deve ser escrito em inglês.
+ */
+public class GP2_16
+{
+
+    // inicia
+    final static Scanner scanner = new Scanner(System.in);
+    static { scanner.useLocale(Locale.ENGLISH); }
+
+    public static void main(String[] args)
+    {
+        int n = 0;
+        do
+        {
+            System.out.println("Indique um número inteiro (0 sai do programa): ");
+            n = scanner.nextInt();
+            for(int line = 1; line <= n; line++)
+            {
+                for(int col = 0; col < line; col++)
+                {
+                    System.out.print("*");
+                }
+                System.out.println();
+            }
+        } while (n > 0);
+    }
+}

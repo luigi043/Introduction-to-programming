@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.params=args
+comment0.target=void\ main(java.lang.String[])
+comment1.params=n\ rightValue
+comment1.target=java.lang.String\ output(int,\ int)
+comment1.text=\n\ Informs\ if\ number\ n\ is\ equal\ to\ random\n\ @param\ mim\ min\ value\n\ @param\ max\ max\ value\n\ @param\ n\ value\ to\ guess\n\ @param\ rightValue\ right\ value\ between\ min\ and\ max\ \n\ @return\ output\ message\ \n
+comment2.params=min\ max
+comment2.target=int\ random(int,\ int)
+comment2.text=\n\ @param\ mim\ min\ value\n\ @param\ max\ max\ value\n\ @return\ random\ value\ between\ min\ and\ max\ \n
+numComments=3

@@ -1,0 +1,46 @@
+
+import java.util.*;
+
+/** Este template foi criado na 
+ * Escola Superior de Tecnologia e Gestão do
+ * Instituto PolitÈcnico de Beja
+ * em 2016/09/29
+ * -----------------------------------------------------
+ * Adicione aqui uma descrição da classe, o seu nome e a data
+ * @author (o seu nome) 
+ * @version (número de versão ou data)
+ * 
+ * O programa deve ser escrito em inglês.
+ */
+public class FahrenheitToCelsius_GP2_4
+{
+
+    // inicia
+    final static Scanner scanner = new Scanner(System.in);
+    static { scanner.useLocale(Locale.ENGLISH); }
+
+    public static void main(String[] args)
+    {
+        
+        System.out.println("Indique valores do intervalo separados por espaço (min max): ");
+        double min = scanner.nextDouble();
+        double max = scanner.nextDouble();
+        
+        System.out.println("Fahrenheit\tCelsius");
+        for (double f = min; f <= max; f += 0.5)
+        {
+            System.out.printf("%4.2f\t\t%6.2f\n", f, fahrenheit2Celsius(f));
+        }
+    }
+    
+    /**
+     * Converts Fahrenheit degrees to Celsius degrees
+     *
+     * @param  fahrenheit   fahrenheit degrees
+     * @return celsius degrees
+     */
+    public static double fahrenheit2Celsius(double fahrenheit)
+    {
+       return (fahrenheit - 32.0) * 5.0 / 9.0;
+    }
+}

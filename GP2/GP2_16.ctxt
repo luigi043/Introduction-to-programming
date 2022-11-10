@@ -1,0 +1,6 @@
+#BlueJ class context
+comment0.target=GP2_16
+comment0.text=\ Este\ template\ foi\ criado\ na\ \n\ Escola\ Superior\ de\ Tecnologia\ e\ Gest\u00E3o\ do\n\ Instituto\ Polit\u00C8cnico\ de\ Beja\n\ em\ 2016/09/29\n\ -----------------------------------------------------\n\ Adicione\ aqui\ uma\ descri\u00E7\u00E3o\ da\ classe,\ o\ seu\ nome\ e\ a\ data\n\ @author\ Joao\ Paulo\ Barros\n\ @version\ 2016/10/30\n\ \n\ O\ programa\ deve\ ser\ escrito\ em\ ingl\u00EAs.\n
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+numComments=2
