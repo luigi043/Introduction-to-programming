@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.target=CarConsumption
+comment0.text=\ Fuel\ consumptions\n\ @author\ Jo\u00E3o\ Paulo\ Barros\ \n\ @version\ 2021/11/08\n
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+comment2.params=message
+comment2.target=double\ readDouble(java.lang.String)
+comment3.params=distance\ averageConsumption
+comment3.target=double\ consumedFuel(double,\ double)
+comment4.params=consumedFuelInLiters\ pricePerLiter
+comment4.target=double\ consumedFuelCost(double,\ double)
+numComments=5
